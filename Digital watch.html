@@ -1,102 +1,24 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-.one{
-
-    min-height: 100vh;
-
-    width: 100%;
-    background-size: cover;
-background: linear-gradient(45deg,#08001f,#140b32);
-    color: rgb(203, 11, 11);
-    position: relative;
-}
-.one h1{
-    color: white;
-    text-align: center;
-    font-size: 100px;
-    font-weight: 700;
-
-
-
-}
-.one-box1{
-    width: 800px;
-    height: 180px;
-    position: absolute;
-    top:50% ;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-.clock{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    /* background: rgba(233,0,240,0.15); */
-    border-radius: 50px;
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    backdrop-filter: blur(40px);
-
-
-
-
-
-}
-/* .one-box1::before{
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #b7dc25;
-    border-radius: 5px;
-    position: absolute;
-    left: -50px;
-    top:-50px;
-    z-index: -1;
-} */
-.one-box1::after{
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #dc6b25;
-    border-radius: 50%;
-    position: absolute;
-    right: -30px;
-    bottom:-50px;
-    z-index: -1;
-}
-.clock span{
-    font-size: 80px;
-    width: 100px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-}
-.clock span::after{
-    font-size: 20px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#hour::after{
-    content: 'hours';
-    color: white;
-
-}
-#minute::after{
-    content: 'Minute';
-    color: white;
-
-}
-#sec::after{
-    content: 'Second';
-    color: white;
-
-}
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div class="one">
+        <h1>Digital watch</h1>
+        <div class="one-box1">
+            <div class="clock">
+                <span id="hour">00</span>
+                <span>:</span>
+                <span id="minute">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
